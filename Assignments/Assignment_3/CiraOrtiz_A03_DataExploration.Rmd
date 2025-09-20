@@ -44,10 +44,11 @@ here()
 
 #Uploading Neonics dataset
 Neonics<-read.csv(
-  file=here('./Data/Raw/ECOTOX_Neonicotinoids_Insects_raw.csv'),
+ 
+ file=here('./Data/Raw/ECOTOX_Neonicotinoids_Insects_raw.csv'),
   stringsAsFactors = TRUE)
 
-Neonics
+#Neonics
 
 #Uploading Niwot Ridge NEON dataset for litter and woody debris 
 Litter<-read.csv(
@@ -222,8 +223,6 @@ ggplot(Litter,aes(x=functionalGroup, y=dryMass))+
   geom_violin()
 
 
-update.packages(ask=FALSE,checkBuilt=TRUE)
-tinytex::tlmgr_update()
 
 ```
 
