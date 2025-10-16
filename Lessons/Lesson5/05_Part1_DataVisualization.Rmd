@@ -84,7 +84,7 @@ Here are some commonly used aesthetic types that can be manipulated in ggplot:
 
 ### Plotting continuous variables over time: Scatterplot and Line Plot
 
-```{r, fig.height = 3, fig.width = 4, warning = FALSE}
+```{r, fig.height = 3, fig.width = 5, warning = FALSE, fig.cap="scatterplot"}
 #^ defining some things for the graphs that will be applied to all graphs below 
 #Scatterplot
 ggplot(EPAair, aes(x = Date, y = Ozone)) + 
