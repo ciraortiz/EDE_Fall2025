@@ -99,6 +99,7 @@ rain<-ggplot(Rainfall_BR_processed,
   geom_smooth(method="lm")
 print(rain)
 
+#Plotting temperature
 temp<-ggplot(Temp_BR_processed,
              aes(x=Date, y = Temperature_C))+
   geom_line()+
